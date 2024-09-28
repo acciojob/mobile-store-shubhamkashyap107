@@ -9,7 +9,7 @@ const Home = ({data}) => {
         {
             data.map((item, index) => {
                 
-                return<Link to={"/products/1"}>
+                return<Link to={`/products/${index + 1}`}>
                 <div style={{border : "1px solid black", width : "400px", display : "flex"}}>
                     <img src={item.img} />
                     <div>
