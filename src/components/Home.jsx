@@ -17,7 +17,7 @@ const Home = ({data}) => {
                     <h3>{item.name}</h3>
                     <div>
                         <p>Price : {item.price}</p>
-                        <button onClick={() => {
+                        <button className='btn' onClick={() => {
                             navigate(`/products/${index + 1}`)
                         }}>Buy</button>
                     </div>
