@@ -6,7 +6,7 @@ const Admin = ({data}) => {
   return (
     <div >
         {data.map((item) => {
-            return <div onClick={() => {
+            return <div className='btn' onClick={() => {
                 navigate(`/admin/products/${item.id}`)
             }} style={{border : "1px solid black", padding : "4px", width : "440px", marginTop : "10px"}}>{item.name}</div>
         })}
