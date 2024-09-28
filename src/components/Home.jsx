@@ -1,5 +1,5 @@
 import React from 'react'
-import{useNavigate} from "react-router-dom"
+import{useNavigate, Link} from "react-router-dom"
 
 const Home = ({data}) => {
     const navigate = useNavigate()
@@ -8,7 +8,9 @@ const Home = ({data}) => {
     <div style={{display : 'grid', gridTemplateColumns : "1fr 1fr"}}>
         {
             data.map((item, index) => {
-                return <div style={{border : "1px solid black", width : "400px", display : "flex"}}>
+                
+                return<Link to={"/products/1"}>
+                <div style={{border : "1px solid black", width : "400px", display : "flex"}}>
                     <img src={item.img} />
                     <div>
 
@@ -21,6 +23,7 @@ const Home = ({data}) => {
                     </div>
                         </div>
                 </div>
+                        </Link> 
             })
         }
     </div>

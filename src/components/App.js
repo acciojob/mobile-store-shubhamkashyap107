@@ -78,7 +78,7 @@ const App = () => {
         <Route path="/admin" element={<Admin data={data} setData={setData} />}/>
         <Route path="/admin/products/:id" element={<Edit data={data} setData={setData}/>}/>
         <Route path="/products/:id" element={<Product data={data} setData={setData} />}/>
-        <Route path="/products/:id" element={<Product data={data} setData={setData} />}/>
+        {/* <Route path="/products/:id" element={<Product data={data} setData={setData} />}/> */}
       </Routes>    
     </div>
     </BrowserRouter>
